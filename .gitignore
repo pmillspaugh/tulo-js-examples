@@ -1,1 +1,4 @@
-vanilla-js-with-express/node_modules
+# Dependency directories
+node_modules/
+jspm_packages/
+vanilla-js-with-express/node_modules/
