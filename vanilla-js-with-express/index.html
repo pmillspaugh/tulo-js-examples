@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Hey I'm using tulo.js</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>We are Cats. We are Snakes. We are Catsnakes.</h1>
+    <img src="/catsnakes.png" alt="cat snake" />
+    <script type="module">
+      if (navigator.serviceWorker) {
+        await navigator.serviceWorker
+          .register('service-worker.js', {
+            type: 'module',
+            scope: '/'
+          })
+          .catch((e) =>
+            console.error(`Service worker registration failed: ${e}`)
+          );
+      }
+    </script>
+  </body>
+</html>
