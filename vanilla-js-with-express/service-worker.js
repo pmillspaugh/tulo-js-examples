@@ -20,7 +20,7 @@ const imageCacheSpec = {
   name: 'imageCache'+version, //give your cache a name and tag on the version number
   types: ['image'], //input HTML MIME types e.g. text/html, text/css, image/gif, etc.
   urls: ['/catsnakes.png'], //input any reachable file paths to be cached that correspond to the types specific to this cacheSpec
-  strategy: 'NetworkOnly' //currently supported strategies are: CacheFirst, NetworkFirst, NetworkOnly
+  strategy: 'NetworkFirst' //currently supported strategies are: CacheFirst, NetworkFirst, NetworkOnly
 }
 
 cacheGenerator([pageCacheSpec, imageCacheSpec, staticCacheSpec]);//include your page/markup caches first
